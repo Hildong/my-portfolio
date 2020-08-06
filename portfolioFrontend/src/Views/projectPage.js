@@ -185,7 +185,7 @@ class projectPage extends React.Component {
                                                     return <div onClick={() => this.closeAndOpenBigProjectDiv(x)} className="project-div">
                                                                 <img className="project-div-img" alt="project pic" src={`../static/pictures/${x.projectName}.png`}/>
                                                                 <h1>{x.projectName}</h1>
-                                                                <p className="project-desc">{x.projectDescription.substr(0, 30)}<br />{x.projectDescription.substr(31, 56)}...<br/><br/><i>Click to read more</i></p>
+                                                                <p className="project-desc">{x.projectDescription.substr(0, 30)}<br />{x.projectDescription.substr(31, 56)}...<br/><i>Click to read more</i></p>
                                                             </div>
                                                 } 
                                             } 
