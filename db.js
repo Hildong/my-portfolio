@@ -56,7 +56,7 @@ let storage = multer.diskStorage({
     destination: (req, file, cb) => {
         //Save image in the frontend as well as in the backend
         cb(null, path.join(__dirname, '/views/static/pictures'))
-        cb(null, path.join(__dirname, './portfolioFrontend/src/static/pictures'))
+        cb(null, path.join(__dirname, '/portfolioFrontend/src/static/pictures'))
     },
     filename: (req, file, cb) => {
         //Give image the same filename it had when uploaded from client PC
@@ -106,7 +106,7 @@ function removeProject(req, res, projectName) {
                 //Remove picture from backend 
                 fs.unlinkSync(path.join(__dirname, `/views/static/pictures/${projectName}.png`))
                 //Remove picture from frontend
-                fs.unlinkSync(path.join(__dirname, `./portfolioFrontend/src/static/pictures/${projectName}.png`))
+                fs.unlinkSync(path.join(__dirname, `/portfolioFrontend/src/static/pictures/${projectName}.png`))
             } catch(err) {
                 //Console.log potential errors
                 console.error(err)

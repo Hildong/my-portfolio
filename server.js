@@ -39,7 +39,7 @@ app.set("view engine", "handlebars")
 
 //Custom handlebars registerHelper. Note, this helper doesn't execute properly if arrow function is used as CB function, so use normal function() as CB
 Handlebars.registerHelper('project_pic_name', function() {
-    return `/static/pictures/${this.projectName}.png`
+    return path.join(__dirname, `/views/static/pictures/${this.projectName}.png`)
 })
 
 Handlebars.registerHelper('projectName', function() {
