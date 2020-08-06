@@ -55,7 +55,7 @@ let storage = multer.diskStorage({
     //Set destination for where image should be saved   
     destination: (req, file, cb) => {
         //Save image in the frontend as well as in the backend
-        cb(null, path.join(__dirname, '/views/static/pictures'))
+        cb(null, path.join(__dirname, '/views/static/pifctures'))
         cb(null, path.join(__dirname, '/portfolioFrontend/src/static/pictures'))
     },
     filename: (req, file, cb) => {
