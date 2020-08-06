@@ -1,0 +1,349 @@
+/* -- Importing google fonts -- */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Raleway:300");
+@import url("https://fonts.googleapis.com/css?family=Lusitana:400,700");
+
+/* -- Importing google fonts -- */
+
+
+/* -- Remove default browser styling -- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* -- Remove default browser styling -- */
+
+
+/* -- Login page -- */
+
+.form {
+    height: 30rem;
+    width: 30rem;
+    margin: 12rem auto;
+    color: black;
+}
+
+.form-header {
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    font-size: 2.3rem;
+    text-decoration: underline;
+}
+
+.input-box {
+    display: block;
+    width: 18rem;
+    height: 7rem;
+    margin: 2rem auto;
+}
+
+.input {
+    width: 18rem;
+    height: 2rem;
+    border: 0;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background-color: white;
+    font-family: Raleway, sans-serif;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.submit-btn {
+    display: block;
+    background-color: rgb(50, 50, 50);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    line-height: 24px;
+    border: none;
+    border-radius: 5px;
+    height: 2.5rem;
+    width: 7rem;
+    cursor: pointer;
+    margin: 3rem auto;
+    transition: .3s;
+    -webkit-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.48);
+    -moz-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.48);
+    box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.48);
+}
+
+.submit-btn:hover {
+    background-color: rgb(16, 16, 16);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* -- Login page -- */
+
+
+/* -- Dashboard page -- */
+
+.dashboard-nav {
+    height: 10vh;
+    width: 100%;
+    -webkit-box-shadow: 0px 10px 5px -1px rgba(0,0,0,0.53);
+    -moz-box-shadow: 0px 10px 5px -1px rgba(0,0,0,0.53);
+    box-shadow: 0px 10px 5px -1px rgba(0,0,0,0.53);
+    font-family: Raleway, sans-serif;
+    overflow: hidden;
+}
+
+
+.dashboard-content {
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.page-name {
+    font-size: 1.5rem;
+    position: absolute;
+    padding-top: 1.5rem;
+    margin-left: 1rem;
+}
+
+.dashboard-nav form {
+    padding-top: 1.5rem;
+    height: 3rem;
+    width: 6.5rem;
+    margin-right: .5rem;
+    float: right;
+}
+
+.logout-btn {
+    border: 1px solid rgb(0, 0, 0);
+    transition: .3s;
+    cursor: pointer;
+    background-color: white;
+    font-family: Raleway, sans-serif;
+    width: 6rem;
+    height: 2rem;
+    font-size: 1.3rem;
+}
+
+.logout-btn:hover {
+    color: rgba(70, 80, 60, 0.7);
+    background-color: rgba(222, 223, 221, 0.7);
+}
+
+.add-project {
+    border-radius: 10px;
+    height: 39rem;
+    width: 26rem;
+    margin-top: 1.5rem;
+    margin-left: 5rem;
+    position: absolute;
+    -webkit-box-shadow: 0px 3px 5px 10px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0px 3px 5px 10px rgba(0,0,0,0.12);
+    box-shadow: 0px 3px 5px 10px rgba(0,0,0,0.12);
+}
+
+.add-project-header {
+    font-family: Raleway, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 1.5rem;
+    text-decoration: underline;
+}
+
+.projects {
+    border: 1px solid red;
+    height: 80vh;
+    width: 62vw;
+    margin-left: 35vw;
+    margin-top: 2rem;
+    overflow-y: auto;
+}
+
+.add-project-input {
+    width: 18rem;
+    height: 2rem;
+    display: block;
+    margin: 1.5rem auto;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1.3rem;
+} 
+
+.add-project-file-select {
+    display: block;
+    margin: 1rem auto;
+}
+
+.add-project-input:focus {
+    outline: none;
+}
+
+.add-project-desc {
+    width: 24rem;
+    height: 8rem;
+    font-size: 1.3rem;
+    resize: none;
+    display: block;
+    margin: 1rem auto;
+    padding: 2px;
+}
+
+.add-project-submit {
+    display: block;
+    background-color: rgb(50, 50, 50);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    line-height: 24px;
+    border: none;
+    border-radius: 5px;
+    height: 2.5rem;
+    width: 7rem;
+    cursor: pointer;
+    margin: 3rem auto;
+    transition: .3s;
+    -webkit-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.48);
+    -moz-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.48);
+    box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.48);
+}
+
+.add-project-submit:hover {
+    background-color: rgb(16, 16, 16);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* -- Dashboard page -- */
+
+
+/* -- Project -- */
+
+.project-div {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    margin-top: 3px;
+    margin-left: 10px;
+    height: 18rem;
+    width: 18rem;
+    display: inline-block;
+    -webkit-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.48);
+    -moz-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.48);
+    box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.48);
+    transition: 1s;
+}
+
+.project-div:hover {
+    animation: project-div-hover .3s;
+    cursor: pointer;
+    animation-fill-mode: forwards;
+}
+
+.github {
+    color: white;
+}
+
+.project-div:hover > .github {
+    color: red;
+}
+
+.project-div-img {
+    height: 10rem;
+    width: 18rem;
+    background-color: red;
+    background-size: cover;
+}
+
+.projectDeleteBtn {
+    background-color: rgba(200, 10, 0, .8);
+    width: 6rem;
+    text-align: center;
+    color: white;
+    padding-top: .1rem;
+    border-radius: 10px;
+    height: 2.5rem;
+    font-size: 1rem;
+    margin-top: -7rem;
+    margin-left: 5.5vw;
+    transition: .3s;
+}
+
+.projectDeleteBtn:hover {
+    background-color: rgba(200, 10, 0, 1);
+    cursor: pointer;
+}
+
+/* -- Project -- */
+
+
+/* -- Animations -- */
+
+@keyframes project-div-hover {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-1%);
+    }
+}
+
+
+/* -- Animations -- */
+
+
+
+/* -- Media Queryes -- */
+
+@media screen and (max-width: 1400px) {
+    .projects {
+        width: 60vw;
+        margin-left: 38vw;
+    }
+}
+
+@media screen and (max-width: 1202px) {
+
+    .dashboard-nav {
+        z-index: 100;
+    }
+
+    .dashboard-content {
+        height: auto;
+        overflow: auto;
+    }
+
+    .add-project {
+        border-radius: 10px;
+        height: 39rem;
+        width: 90vw;
+        display: block;
+        position: relative;
+        margin: 1.5rem auto;
+        -webkit-box-shadow: 0px 3px 5px 10px rgba(0,0,0,0.12);
+        -moz-box-shadow: 0px 3px 5px 10px rgba(0,0,0,0.12);
+        box-shadow: 0px 3px 5px 10px rgba(0,0,0,0.12);
+    }
+    
+    
+    .projects {
+        border: 1px solid red;
+        height: 80vh;
+        width: 85vw;
+        margin: 2rem auto;
+        display: block;
+    }
+
+    .add-project-desc {
+        width: 17rem;
+        height: 8rem;
+        font-size: 1.3rem;
+        resize: none;
+        display: block;
+        margin: 1rem auto;
+        padding: 2px;
+    }
+}
+
+/* -- Media Queryes -- */

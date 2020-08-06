@@ -1,0 +1,828 @@
+/* -- Importing google fonts -- */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Raleway:300");
+@import url("https://fonts.googleapis.com/css?family=Lusitana:400,700");
+
+/* -- Importing google fonts -- */
+
+
+/* -- Remove default browser spacing -- */
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* -- Remove default browser spacing -- */
+
+
+/* -- Home Page styling -- */
+
+canvas {
+    position: absolute;
+    z-index: -1;
+    background-color: rgb(10, 10, 10);
+}
+
+.home-page-content {
+    height: 85vh;
+    width: 90rem;
+    margin-top: 3rem;
+    margin-left: 10vw;
+    z-index: 53;
+    color: white;
+    animation-fill-mode: forwards;
+    animation: loadContent .6s;
+}
+
+.about-section {
+    height: 18rem;
+    width: 70rem;
+    margin: 1rem auto;
+    margin-top: 10vh;
+}
+
+.about-me-text {
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin: 0 auto;
+    text-align: center;
+    width: 50rem;
+}
+
+.about-me-my-name {
+    color: rgba(223, 61, 61, 0.6);
+}
+
+.experience-and-competencies {
+    width: 88.5rem;
+    height: 19rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 7rem;
+    margin-left: 3.5rem;
+}
+
+.experience-and-competencies-box {
+    display: inline-block;
+    height: 10.5rem;
+    z-index: 3;
+    margin-left: 1rem;
+    width: 29rem;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41);
+    background-color: rgba(10, 10, 10, 0.9);
+    border-radius: 10px;
+}
+
+.competencies-box {
+    width: 23rem;
+}
+
+.competencies-header, .experiences-header {
+    padding-left: 1rem;
+}
+
+.competencies, .experiences {
+    padding-left: 2rem;
+}
+
+/* -- Home Page styling -- */
+
+
+/* -- Project Page styling -- */
+
+.project-page-content {
+    animation-fill-mode: forwards;
+    animation: loadContent .6s;
+}
+
+.projects-div {
+    border: 1px solid rgba(192, 192, 192, 0.328);
+    width: 85vw;
+    height: 75vh;
+    margin-top: 1vh;
+    margin-left: 10vw;
+}
+
+.projects-filter {
+    border-bottom: .1px solid rgb(255, 255, 255, .3);
+    width: 45vw;
+    height: 10vh;
+    margin-top: 5vh;
+    margin-left: 10vw;
+    color: white;
+}
+
+.project-filter-label {
+    margin-left: 1rem;
+    font-size: 1.1rem;
+    font-family: Raleway, sans-serif;
+}
+
+.project-filter-header {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-family: Raleway, sans-serif;
+    font-size: 1.7rem;
+}
+
+.project-div {
+    height: 33vh;
+    width: 18vw;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    transition: 1s;
+    -webkit-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.48);
+    -moz-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.48);
+    box-shadow: 9px 7px 5px 0px rgba(50,50,50,0.48);
+    font-family: Raleway, sans-serif;
+}
+
+.project-div:hover {
+    animation: project-div-hover .3s;
+    cursor: pointer;
+    animation-fill-mode: forwards;
+
+}
+
+.project-div-img {
+    height: 20vh;
+    width: 18vw;
+}
+
+.big-project-div {
+    background-color: black;
+    width: 60vw;
+    height: 90vh;
+    margin-top: 1rem;
+    margin-left: 20vw;
+    display: none;
+    position: absolute;
+    z-index: 1000;
+}
+
+.big-project-div-exit {
+    margin-left: 98.5%;
+    position: absolute;
+}
+
+.big-project-div-img {
+    height: 65vh;
+    width: 60vw;
+    background-color: black;
+}
+
+.big-project-div-name {
+    font-size: 4.5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: -35%;
+    width: 30vw;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+}
+
+.big-project-links {
+    height: 10vh;
+    width: 30vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: -23%;
+}
+
+.project-link {
+    position: fixed;
+    width: 6rem;
+    height: 2rem;
+    text-align: center;
+    padding-top: .6rem;
+    border-radius: 2rem;
+    transition: .3s;
+}
+
+.github {
+    margin-left: 15%;
+    background-color: rgb(77, 224, 230);
+}
+
+.github:hover {
+    background-color: rgb(9, 142, 146);
+
+}
+
+.website {
+    margin-left: 8.5%;
+    background-color: rgb(39, 167, 71);
+}
+
+.website:hover {
+    background-color: rgb(0, 192, 48);
+
+}
+
+.read-more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.project-desc {
+    width: 100%;
+}
+
+.big-project-div-desc {
+    font-size: 1.6rem;
+    margin-top: .2rem;
+    margin-left: .2rem;
+    font-style: italic;
+    height: 20%;
+}
+
+.bigProjectDivDescBorder {
+    width: 20%;
+    border-bottom: .1px solid rgba(255, 255, 255, 0.3);
+    margin-left: .7rem;
+}
+
+.bigProjectDivTags {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: .5rem;
+    height: 2rem;
+    width: 100%;
+}
+
+.bigProjectDivTag {
+    display: inline-block;
+}
+
+/* -- Project Page styling -- */
+
+
+
+/* -- Contact Page Styling -- */
+
+.get-in-touch {
+    height: 60rem;
+    width: 80rem;
+    color: white;
+    margin: 0 auto;
+    animation-fill-mode: forwards;
+    animation: loadContent .6s;
+}
+
+.contact-header {
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.contact-form {
+    width: 55rem;
+    height: 40rem;
+    margin-top: 14rem;
+    margin-left: 18rem;
+}
+
+.contact-inputs-box {
+    width: 51rem;
+    margin: 3rem auto;
+}
+
+.contact-input {
+    width: 24rem;
+    height: 2rem;
+    border: 0;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    background-color: rgb(10, 10, 10);
+    color: white;
+    font-family: Raleway, sans-serif;
+    font-size: 1.2rem;
+}
+
+.contact-input:focus {
+    outline: none;
+}
+
+.contact-client-email {
+    margin-left: 1.8rem;
+}
+
+.contact-input-msg {
+    margin-top: 3rem;
+    display: block;
+    width: 49rem;
+    height: 8rem;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    background-color: rgb(10, 10, 10);
+    color: white;
+    font-family: Raleway, sans-serif;
+    font-size: 1rem;
+    resize: vertical;
+    padding: 5px;
+}
+
+.contact-input-msg:focus {
+    outline: none;
+}
+
+.submit-btn {
+    display: block;
+    background-color: rgb(50, 50, 50);
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    line-height: 24px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2rem auto;
+    transition: .3s;
+}
+
+.submit-btn:hover {
+    background-color: rgb(16, 16, 16);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* -- Contact Page Styling -- */
+
+
+
+/* -- Components and other stuff-- */
+
+
+/* - Navbar-  */
+
+.navigation-bar {
+    background-color: rgb(50, 50, 50);
+    -webkit-box-shadow: 10px 0px 5px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 10px 0px 5px 0px rgba(0,0,0,0.35);
+    box-shadow: 10px 0px 5px 0px rgba(0,0,0,0.35);
+    width: 7%;
+    height: 100vh;
+    position: absolute;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/* Picture of me on navbar */
+
+.myName {
+    text-align: center;
+    margin-top: 1.2rem;
+}
+
+
+/* Navbar links */
+
+.navbar-space-line {
+    width: 6rem;
+    margin: 2rem auto;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.navlink-line {
+    width: 4rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 0 auto;
+}
+
+ul {
+    margin-top: 5rem;
+}
+
+.nav-link {
+    height: 6rem;
+    transition: .3s;
+    color: white;
+    text-align: center;
+}
+
+a {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* Navbar links icons */
+.nav-link-icon {
+    height: 2rem;
+    width: 2rem;
+    color: white;
+    margin-top: 1.3rem;
+    margin-bottom: -1.8rem;
+}
+
+/* Visited and hovering styling */
+.nav-link:hover {
+    cursor: pointer;
+    background-color: rgb(60, 60, 60);
+}
+
+.nav-link:visited {
+    color: white;
+}
+
+/* Copyright text at bottom of navbar */
+
+.copyright-text {
+    text-align: center;
+    font-size: .7rem;
+    margin-top: 4rem;
+}
+
+/* - Navbar - */
+
+/* Background for all pages, with default being dark themed */
+
+.light-or-dark {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(10, 10, 10);
+    color: white;
+
+}
+
+/* -- Components and other stuff -- */
+
+
+/* -- Media queryes -- */
+
+@media only screen and (max-width: 768px) {
+    .home-page-content {
+        height: 180vh;
+        width: 84%;
+        margin-top: 3rem;
+        margin-left: 15%;
+        z-index: 53;
+        color: white;
+        animation-fill-mode: forwards;
+        animation: loadContent .6s;
+        overflow-y: auto;
+    }
+    .about-section {
+        height: 80vh;
+        width: 80%;
+        margin: 1vh auto;
+        margin-right: 1rem;
+    }
+    .about-me-text {
+        margin-top: 1rem;
+        font-size: 2.5rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+    }
+    .about-me-my-name {
+        color: rgba(223, 61, 61, 0.6);
+    }
+    .experience-and-competencies {
+        width: 85%;
+        height: 115%;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: 2rem;
+    }
+    
+    .experience-and-competencies-box {
+        display: block;
+        height: 25%;
+        z-index: 3;
+        width: 85%;
+        margin-top: .7rem;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41);
+        background-color: rgba(10, 10, 10, 0.9);
+        border-radius: 10px;
+    }
+    
+    .competencies-box {
+        width: 85%;
+        height: 14%;
+    }
+
+    .work-experiences {
+        height: 14%;
+    }
+    
+    .competencies-header, .experiences-header {
+        padding-left: 1rem;
+    }
+    
+    .competencies, .experiences {
+        padding-left: 2rem;
+    }
+    .navigation-bar {
+        background-color: rgb(50, 50, 50);
+        -webkit-box-shadow: 10px 0px 5px 0px rgba(0,0,0,0.35);
+        -moz-box-shadow: 10px 0px 5px 0px rgba(0,0,0,0.35);
+        box-shadow: 10px 0px 5px 0px rgba(0,0,0,0.35);
+        width: 20%;
+        height: 100vh;
+        position: fixed;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+    
+    }
+    ul {
+        margin-top: 1rem;
+    }
+    .get-in-touch {
+        height: 80vh;
+        width: 75vw;
+        color: white;
+        margin: 3rem auto;
+        animation-fill-mode: forwards;
+        animation: loadContent .6s;
+        margin-left: 22%;
+    }
+    
+    .contact-header {
+        text-align: center;
+        font-family: Raleway, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 3rem;
+        font-weight: 300;
+    }
+    
+    .contact-form {
+        width: 90%;
+        height: 95%;
+        margin-left: .8rem;
+        margin-top: 2rem;
+    }
+    
+    .contact-inputs-box {
+        width: 51rem;
+        margin: 3rem auto;
+    }
+    
+    .contact-input {
+        width: 67vw;
+        height: 2rem;
+        border: 0;
+        display: block;
+        border-bottom: 2px solid rgb(255, 255, 255);
+        background-color: rgb(10, 10, 10);
+        color: white;
+        font-family: Raleway, sans-serif;
+        font-size: 1.2rem;
+    }
+    
+    .contact-input:focus {
+        outline: none;
+    }
+    
+    .contact-client-email {
+        margin-left: 0;
+    }
+    
+    .contact-input-msg {
+        margin-top: 3rem;
+        display: block;
+        width: 64vw;
+        height: 8rem;
+        border-radius: 5px;
+        border: 1px solid rgba(255, 255, 255, .25);
+        border-bottom: 2px solid rgb(255, 255, 255);
+        background-color: rgb(10, 10, 10);
+        color: white;
+        font-family: Raleway, sans-serif;
+        font-size: 1rem;
+        resize: vertical;
+        padding: 5px;
+    }
+    .submit-btn {
+        display: block;
+        background-color: rgb(50, 50, 50);
+        color: #fff;
+        font-family: Raleway, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 1rem;
+        line-height: 24px;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: .3s;
+        margin-left: 10%;
+        margin-top: 1rem;
+    }
+    .project-page-content {
+        animation-fill-mode: forwards;
+        animation: loadContent .6s;
+    }
+    
+    .projects-div {
+        border: 1px solid rgba(192, 192, 192, 0.328);
+        width: 75vw;
+        height: 75vh;
+        margin-top: 1vh;
+        margin-left: 21vw;
+        overflow-y: auto;
+    }
+    
+    .projects-filter {
+        border-bottom: .1px solid rgb(255, 255, 255, .3);
+        width: 75vw;
+        height: 20vh;
+        margin-top: 5vh;
+        margin-left: 21vw;
+        color: white;
+    }
+    
+    .project-filter-label {
+        margin-left: 1rem;
+        font-size: 1.1rem;
+        font-family: Raleway, sans-serif;
+    }
+    
+    .project-filter-header {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        font-family: Raleway, sans-serif;
+        font-size: 1.7rem;
+    }
+    
+    .project-div {
+        height: 37vh;
+        width: 60vw;
+        display: block;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        transition: 1s;
+        -webkit-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.48);
+        -moz-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.48);
+        box-shadow: 9px 7px 5px 0px rgba(50,50,50,0.48);
+        font-family: Raleway, sans-serif;
+    }
+    
+    .project-div:hover {
+        animation: project-div-hover .3s;
+        cursor: pointer;
+        animation-fill-mode: forwards;
+    
+    }
+    
+    .project-div-img {
+        height: 20vh;
+        width: 100%;
+    }
+
+    .read-more {
+        position: relative;
+    }
+    
+    .big-project-div {
+        position: absolute;
+        margin-left: -2px;
+        width: 100vw;
+    }
+    .big-project-div-img {
+        width: 100%;
+    }
+    .big-project-div-exit {
+        margin-left: 5px;
+    }
+    .big-project-div-name {
+        width: 45vw;
+        margin-top: -40vh;
+    }
+    .github {
+        margin-top: -10vh;
+        margin-left: 2.5vw;
+
+    }
+    .website {
+        display: block;
+        margin-left: 2.5vw;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+    .about-section {
+        margin-left: -3%;
+    }
+    .experience-and-competencies {
+        height: 50vh;
+        width: 80vw;
+        margin-top: -100px;
+    }
+
+    .experience-and-competencies-box {
+        display: inline-block;
+    }
+
+    .projects-filter {
+        width: 60vw;
+    }
+
+    .project-div {
+        width: 33%;
+    }
+    .project-div-img {
+        width: 100%;
+    }
+    .github {
+        margin-top: 2.5rem;
+        margin-left: 17vw;
+    }
+    .website {
+        margin-top: 2.5rem;
+        margin-left: 6vw;
+    }
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1500px) {
+
+    .experience-and-competencies {
+        width: 95%;
+        height: 125%;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: -1rem;
+    }
+    .experience-and-competencies-box {
+        margin-left: 1rem;
+        width: 31.3%;
+        height: 22%;
+        margin-left: .5rem;
+    }
+    .competencies-box {
+        width: 25%;
+        margin-left: .5rem;
+    }
+    
+    .experiences-box {
+        width: 27%;
+        margin-left: -1px;
+    }
+    .projects-filter {
+        width: 50vw;
+    }
+    .project-div {
+        width: 23%;
+    }
+    .project-div-img {
+        width: 100%;
+    }
+    .github {
+        margin-top: 1rem;
+        margin-left: 16vw;
+    }
+    .website {
+        margin-top: 1rem;
+        margin-left: 7vw;
+    }
+}
+/* -- Media queryes -- */
+
+
+/* -- Keyframe animations -- */
+
+@keyframes loadContent {
+    from {
+        opacity: 0;
+        transform: translateY(5%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes project-div-hover {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-1%);
+    }
+}
