@@ -30,7 +30,7 @@ class projectPage extends React.Component {
 
     componentDidMount() {
         console.log("es")
-        fetch('http://localhost:8000/projectdata')
+        fetch('http://www.philiphilding.com/projectdata')
         .then(response => {
             return response.json();
         })

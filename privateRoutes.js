@@ -18,7 +18,7 @@ router.get("/", verifyToken , (req, res) => {
 //Logout admin by clearing cookie and redirecting to login pace
 router.post('/logout', (req, res) => {
     res.clearCookie('token');
-    res.redirect("http://localhost:8000/admin");
+    res.redirect("http://www.philiphilding.com/admin");
 })
 
 //Add data from form and create project scheme in mongoDB

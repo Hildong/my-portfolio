@@ -46,7 +46,7 @@ class contactPage extends React.Component {
             }
 
             //Use axios to send data from form
-            axios.post('/mail', data)
+            axios.post('http://www.philiphilding.com/mail', data)
                 .then(res => {
                     console.log(res);
                 })

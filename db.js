@@ -93,7 +93,7 @@ function addProject(req, res, projectName, projectTags, githubLink, websiteLink,
         })
 
     //Redirect to same page, basically a refresh
-    res.redirect("http://localhost:8000/admin/dashboard/")
+    res.redirect("http://www.philiphilding.com/admin/dashboard/")
 }
 
 //Function from removing project
@@ -113,10 +113,10 @@ function removeProject(req, res, projectName) {
             }
 
             project.remove();
-            res.redirect("http://localhost:8000/admin/dashboard/")
+            res.redirect("http://www.philiphilding.com/admin/dashboard/")
         } else {
             console.log("not found")
-            res.redirect("http://localhost:8000/admin/dashboard/")
+            res.redirect("http://www.philiphilding.com/admin/dashboard/")
         }
     })
 }
