@@ -55,7 +55,7 @@ app.get("/admin", (req, res) => {
 })
 
 app.get("/api", (req, res) => {
-    res.json({"yes": "bruhs"});
+    res.json(__dirname);
 })
 
 app.get("/projectdata", (req, res) => {
