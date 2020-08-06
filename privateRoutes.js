@@ -23,6 +23,7 @@ router.post('/logout', (req, res) => {
 
 //Add data from form and create project scheme in mongoDB
 router.post('/addProject', urlencodedParser, db.upload.single("projectPictureName"), (req, res) => {
+    console.log/"shhshwhshhs"
     db.addProject(req, res, req.body.projectName, req.body.projectTags, req.body.projectGithub, req.body.projectWebsite, req.body.projectDescription);
 }) 
 

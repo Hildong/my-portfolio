@@ -99,7 +99,7 @@ class homePage extends React.Component {
                             <div className="home-page-content">
 
                                 <div className="about-section">
-                                    <p className="about-me-text">Hello, my name is <i className="about-me-my-name">Philip Hilding.</i> <br/> I'm a 18 year old fullstack freelance developer.</p>
+                                    <p className="about-me-text">Hello, my name is <i className="about-me-my-name">Philip Hilding!</i> <br/> I'm a 18 year old fullstack freelance developer.</p>
                                 </div>
 
                                 <div className="experience-and-competencies">
