@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "npm server.js",
     "heroku-postbuild": "cd portfolioFrontend && npm install && npm run build"
   },
   "author": "",
