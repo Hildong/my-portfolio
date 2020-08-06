@@ -1,12 +1,12 @@
 <nav class="dashboard-nav">
     <span class="page-name">Dashboard</span>
-    <form method="POST" action="http://localhost:8000/admin/dashboard/logout">
+    <form method="POST" action="http://www.philiphilding.com/admin/dashboard/logout">
         <button class="logout-btn">Logout</button>
     </form>
 </nav>
 
 <section class="dashboard-content">
-    <form method="POST" enctype="multipart/form-data" action="http://localhost:8000/admin/dashboard/addProject" class="add-project">
+    <form method="POST" enctype="multipart/form-data" action="http://www.philiphilding.com/admin/dashboard/addProject" class="add-project">
         <h1 class="add-project-header">Add project</h1>
         <input class="add-project-input" name="projectName" placeholder="Project name" required type="text">
         <input class="add-project-input" name="projectTags" placeholder="Tags" required type="text">
@@ -21,7 +21,7 @@
         {{#each ProjectData}}
             <div class="project-div">
                 <img class="project-div-img" src="{{project_pic_name}}">
-                <form action="http://localhost:8000/admin/dashboard/deleteproject" method="POST">
+                <form action="http://www.philiphilding.com/admin/dashboard/deleteproject" method="POST">
                     <input style="display: none;" name="projectName" value={{projectName}}>
                     <input type="submit" value="DELETE" class="projectDeleteBtn">
                 </form>
